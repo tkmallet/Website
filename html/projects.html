@@ -7,20 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- Javascript -->
-    <script type="text/javascript" src="../js/behave.js"></script>
-    <!-- mobile burger bars-->
-    <script src="https://kit.fontawesome.com/c324038999.js" crossorigin="anonymous"></script>  
   </head>
   <body>
     <!-- navbar-->
-    <nav>
+    <nav class="navbar-container">
       <div class="navbar" id="navbar">
         <a href="home.html"><img class="navbarLogo" src="../img/logoTM.png" alt="navbarLogo"></a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="resume.html">Resume</a>
-        <a class="mobileIcon" onclick="navbarExpand()"><i class="fas fa-bars"></i></a>
+        <div class="menuBars">
+          <div class="menuBars_burger"></div>
+        </div>
       </div>
     </nav>
     <main>
@@ -28,6 +26,8 @@
     </main>
     <footer>
       
-    </footer>  
+    </footer> 
+    <!-- Javascript -->
+    <script type="text/javascript" src="../js/behave.js"></script> 
   </body>
 </html>

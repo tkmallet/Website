@@ -6,55 +6,111 @@ background-color: black;
 
 /*-- NAVBAR CSS --*/
 .navbar {
+    border-bottom: white 2px solid;
     overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
 }
 .navbarLogo {
-    width: 50px;
+    width: 30px;
+    height:30px;
+    cursor: pointer;
 }
 .navbar a {
     color: white;
     text-decoration: none;
     text-align: center;
-    display: block;
+    display: flex;
     float: left;
 }
 .navbar a:hover {
     color:#703020;
 }
-.navbar a:target {
+.navbar a:active {
     color: #703020;
 }
-.navbar .mobileIcon {
+.navbar .menuBars {
     display: none;
 }
 
+/*-- mobile specific nav bar attributes --*/
 @media screen and (max-width: 600px) {
+    * {
+        margin: 5px;
+    }
     .navbar a:not(:first-child) {
         display: none;
     }
     .navbarLogo {
         float: center;
-        display: inline-flex;
+        display: block;
     }
-    .navbar a.mobileIcon {
-      float: right;
-      display: inline-flex;
+    /*-- JUST THE MENU BUTTON --*/
+    .navbar .menuBars {
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+    .navbar .menuBars_burger {
+        width:20px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar .menuBars_burger::before,
+    .navbar .menuBars_burger::after {
+        content: "";
+        position: absolute;
+        width:20px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+    .navbar .menuBars_burger::before {
+        transform: translateY(-8px);
+    }
+    .navbar .menuBars_burger::after {
+        transform: translateY(8px);
+    }
+
+    /*-- Animation of button --*/
+    .menuBars.open .menuBars_burger {
+        background:transparent;
+    }
+    .menuBars.open .menuBars_burger::before {
+        transform: rotate(45deg);
+        background: #703020;
+    }
+    .menuBars.open .menuBars_burger::after {
+        transform: rotate(-45deg);
+        background: #703020;
     }
 }
   
 @media screen and (max-width: 600px) {
     .navbar.responsive {
-        position: relative;
+        transform-style: flat;
+        position:relative;
+        transition: all .5s ease-in-out;
+        border-bottom: 2px solid #703020;
+
     }
-    
-    .navbar.responsive a.mobileIcon {
+    .navbar.responsive .menuBars {
         position: absolute;
         right: 0;
         top: 0;
     }
     .navbar.responsive a {
         float: none;
-        display: block;
+        display: flex;
         text-align: left;
     }
 }
