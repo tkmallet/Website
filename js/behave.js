@@ -1,7 +1,7 @@
-function navbar_responsive() {
-    var x = document.getElementById("myNavbar");
+function navbarExpand() {
+    var x = document.getElementById("navbar");
     if (x.className === "navbar") {
-      x.className += " .responsive";
+      x.className += " responsive";
     } else {
       x.className = "topnav";
     }

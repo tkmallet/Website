@@ -39,9 +39,11 @@ background-color: black;
 }
   
 @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
+    .navbar.responsive {
+        position: relative;
+    }
     .navbar.responsive a.mobileIcon {
-        position: absolute;
+        position: center;
         right: 0;
         top: 0;
     }
