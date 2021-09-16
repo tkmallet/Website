@@ -9,6 +9,9 @@ background-color: green;
     overflow:hidden;
 }
 
+.navbar img {
+    max-width: 50px;
+}
 .navbar a {
     float:left;
     display: block;
