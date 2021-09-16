@@ -32,9 +32,13 @@ background-color: black;
     .navbar a:not(:first-child) {
         display: none;
     }
+    .navbarLogo {
+        float: center;
+        display: inline-flex;
+    }
     .navbar a.mobileIcon {
       float: right;
-      display: block;
+      display: inline-flex;
     }
 }
   
@@ -42,6 +46,7 @@ background-color: black;
     .navbar.responsive {
         position: relative;
     }
+    
     .navbar.responsive a.mobileIcon {
         position: absolute;
         right: 0;
