@@ -3,6 +3,6 @@ function navbarExpand() {
     if (x.className === "navbar") {
       x.className += " responsive";
     } else {
-      x.className = "topnav";
+      x.className = "navbar";
     }
   }
