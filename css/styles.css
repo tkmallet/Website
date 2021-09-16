@@ -8,19 +8,19 @@ background-color: black;
 .navbar {
     border-bottom: white 2px solid;
     overflow: hidden;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
 }
 .navbarLogo {
     width: 30px;
-    height:auto;
+    height:30px;
     cursor: pointer;
 }
 .navbar a {
     color: white;
     text-decoration: none;
     text-align: center;
-    display: block;
+    display: flex;
     float: left;
 }
 .navbar a:hover {
@@ -87,17 +87,22 @@ background-color: black;
     }
     .menuBars.open .menuBars_burger::before {
         transform: rotate(45deg);
+        background: #703020;
     }
     .menuBars.open .menuBars_burger::after {
         transform: rotate(-45deg);
+        background: #703020;
     }
 }
   
 @media screen and (max-width: 600px) {
     .navbar.responsive {
-        position: relative;
+        transform-style: flat;
+        position:relative;
+        transition: all .5s ease-in-out;
+        border-bottom: 2px solid #703020;
+
     }
-    
     .navbar.responsive .menuBars {
         position: absolute;
         right: 0;
@@ -105,7 +110,7 @@ background-color: black;
     }
     .navbar.responsive a {
         float: none;
-        display: block;
+        display: flex;
         text-align: left;
     }
 }

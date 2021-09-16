@@ -9,6 +9,7 @@ menuBars.addEventListener('click', () => {
     menuBars.classList.remove('open');
     menuOpen = false;
   }
+  navbarExpand();
 })
 
 function navbarExpand() {
