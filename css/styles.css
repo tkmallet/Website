@@ -43,7 +43,7 @@ background-color: black;
         position: relative;
     }
     .navbar.responsive a.mobileIcon {
-        position: center;
+        position: absolute;
         right: 0;
         top: 0;
     }
