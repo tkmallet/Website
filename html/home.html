@@ -7,15 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- mobile burger bars-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- navbar-->
-    <nav class="navbar-container">
-      <ul class="navbar">
-        <li><a class="logo" href="home.html"><img src="../img/logoTM.png" alt="navbarLogo"></a></li>
-        <li><a class="navbar-link" href="about.html">About</a></li>
-        <li><a class="navbar-link" href="projects.html">Projects</a></li>
-        <li><a class="navbar-link" href="resume.html">Resume</a></li>
+    <nav class="navbar">
+      <ul class="navbar-container">
+        <li>
+          <a class="logo" href="home.html">
+            <img src="../img/logoTM.png" alt="navbarLogo">
+          </a>
+        </li>
+        <li>
+          <a class="navbar-link" href="about.html">About</a>
+        </li>
+        <li>
+          <a class="navbar-link" href="projects.html">Projects</a>
+        </li>
+        <li>
+          <a class="navbar-link" href="resume.html">Resume</a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="mobileIcon" onclick="navbarMobile()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
       </ul>
     </nav>
     <main>
