@@ -49,13 +49,19 @@ background-color: black;
         z-index: 1;
         top: 0;
     }
-    .navbar a:not(:first-child) {
+    .navbar #navbarA {
         display: none;
         transition: .5s;
+    }
+    .navbar a
+    {
+        display: block;
     }
     .navbarLogo {
         float: center;
         display: block;
+        top:0;
+        left:0;
     }
     /*-- JUST THE MENU BUTTON --*/
     .navbar .menuBars {
