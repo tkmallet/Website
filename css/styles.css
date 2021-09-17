@@ -5,11 +5,16 @@ background-color: black;
 }
 
 /*-- NAVBAR CSS --*/
+.navbar-container {
+    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.5s;
+}
+
 .navbar {
     border-bottom: white 2px solid;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
-
+    top:0;
+    transition: 0.5s;
 }
 .navbarLogo {
     width: 30px;
@@ -22,6 +27,7 @@ background-color: black;
     text-align: center;
     display: flex;
     float: left;
+    transition: 0.5s;
 }
 .navbar a:hover {
     color:#703020;
@@ -38,8 +44,14 @@ background-color: black;
     * {
         margin: 5px;
     }
+    .navbar {
+        height: 50px;
+        z-index: 1;
+        top: 0;
+    }
     .navbar a:not(:first-child) {
         display: none;
+        transition: .5s;
     }
     .navbarLogo {
         float: center;
@@ -93,24 +105,36 @@ background-color: black;
         transform: rotate(-45deg);
         background: #703020;
     }
+    .menuBars.open .navbar a:not(:first-child) {
+        display: block;
+        transition: all 0.5s;
+    }
 }
-  
-@media screen and (max-width: 600px) {
-    .navbar.responsive {
-        transform-style: flat;
-        position:relative;
-        transition: all .5s ease-in-out;
-        border-bottom: 2px solid #703020;
 
-    }
-    .navbar.responsive .menuBars {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navbar.responsive a {
-        float: none;
-        display: flex;
-        text-align: left;
-    }
+
+
+.mainBody {
+    transition: margin-Top .5s;
+}
+
+
+h1, p{
+    color: white;
+}
+
+
+
+
+
+
+
+/*-- animation timings --*/
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
