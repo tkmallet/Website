@@ -52,13 +52,15 @@ background-color: black;
     .navbar #navbarA {
         display: none;
         transition: .5s;
-    }
-    .navbar a
-    {
+    }/*                                    TO DO DO TO DO DOT O
+    .navbar a {         
+        padding: 8
+        position:relative;
         display: block;
+        text-align: left;
     }
     .navbarLogo {
-        float: center;
+        position:relative;
         display: block;
         top:0;
         left:0;
