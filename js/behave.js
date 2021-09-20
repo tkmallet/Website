@@ -15,12 +15,18 @@ menuBars.addEventListener('click', () => {
 })
 
 function openNav() {
-  document.getElementById("navbarID").style.height = "150px";
-  document.getElementById("navbarA").style.display = "flex";
+  document.getElementById("navbarID").style.height = "175px";
+  document.getElementById("navbarA").style.height = "120px";
+  document.getElementById("navbarA").style.opacity = "1";
+  document.getElementById("mainBody").style.opacity = "0.2";
+  document.getElementById("socialMedia").style.opacity = "0.2";
   document.getElementById("mainBody").style.marginTop = "0px";
 }
 function closeNav() {
   document.getElementById("navbarID").style.height = "50px";
-  document.getElementById("navbarA").style.display = "none";
+  document.getElementById("navbarA").style.height = "0px";
+  document.getElementById("navbarA").style.opacity = "0";
+  document.getElementById("mainBody").style.opacity = "1";
+  document.getElementById("socialMedia").style.opacity = "1";
   document.getElementById("mainBody").style.marginTop = "0";
 }

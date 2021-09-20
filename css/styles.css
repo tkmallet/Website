@@ -1,7 +1,10 @@
-
+/*-- Imports --*/
+@import url(https://fonts.googleapis.com/css?family=Carattere);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 /*-- Default settings --*/
 * {
 background-color: black;
+font-family: Quicksand, sans-serif;
 }
 
 /*-- NAVBAR CSS --*/
@@ -11,6 +14,7 @@ background-color: black;
 }
 
 .navbar {
+    font-family: Quicksand, sans-serif;
     border-bottom: white 2px solid;
     overflow: hidden;
     top:0;
@@ -21,13 +25,12 @@ background-color: black;
     height:30px;
     cursor: pointer;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
-    text-align: center;
     display: flex;
     float: left;
-    transition: 0.5s;
 }
 .navbar a:hover {
     color:#703020;
@@ -38,6 +41,14 @@ background-color: black;
 .navbar .menuBars {
     display: none;
 }
+
+/*-- Main body generic content --*/
+
+.mainBody, .socialMedia {
+    animation: fadeIn 0.5s;
+    color: white;
+}
+
 
 /*-- mobile specific nav bar attributes --*/
 @media screen and (max-width: 600px) {
@@ -55,14 +66,18 @@ background-color: black;
     }
     .navbar #navbarA {
         position: absolute;
-        display: none;
-        transition: .5s;
+        display: flex;
+        overflow: hidden;
+        font-size: 24px;
+        height: 0px;
+        opacity: 0;
         top: 60px;
         flex-direction: column;
+        transform-origin: top;
+        transition: 0.5s;
     }
     .navbar a {   
-        display: block;
-        text-align: left;
+        display: flex;
     }
     /*-- JUST THE MENU BUTTON --*/
     .navbar .menuBars {
@@ -116,20 +131,16 @@ background-color: black;
         display: block;
         transition: all 0.5s;
     }
+
+
+/*-- Mobile Main Body --*/
+    .mainBody, .socialMedia {
+        margin: 5px;
+        display: flex;
+        opacity:1;
+        transition: 0.5s;
+    }    
 }
-
-
-
-.mainBody {
-    transition: margin-Top .5s;
-}
-
-
-h1, p{
-    color: white;
-}
-
-
 
 
 
