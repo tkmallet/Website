@@ -49,21 +49,20 @@ background-color: black;
         z-index: 1;
         top: 0;
     }
-    .navbar #navbarA {
-        display: none;
-        transition: .5s;
-    }/*                                    TO DO DO TO DO DOT O
-    .navbar a {         
-        padding: 8
-        position:relative;
-        display: block;
-        text-align: left;
-    }
     .navbarLogo {
-        position:relative;
-        display: block;
         top:0;
         left:0;
+    }
+    .navbar #navbarA {
+        position: absolute;
+        display: none;
+        transition: .5s;
+        top: 60px;
+        flex-direction: column;
+    }
+    .navbar a {   
+        display: block;
+        text-align: left;
     }
     /*-- JUST THE MENU BUTTON --*/
     .navbar .menuBars {

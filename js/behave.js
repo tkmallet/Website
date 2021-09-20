@@ -16,9 +16,8 @@ menuBars.addEventListener('click', () => {
 
 function openNav() {
   document.getElementById("navbarID").style.height = "150px";
-  document.getElementById("navbarA").style.display = "block";
+  document.getElementById("navbarA").style.display = "flex";
   document.getElementById("mainBody").style.marginTop = "0px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 function closeNav() {
   document.getElementById("navbarID").style.height = "50px";
