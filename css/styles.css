@@ -127,10 +127,7 @@ font-family: Quicksand, sans-serif;
         transform: rotate(-45deg);
         background: #703020;
     }
-    .menuBars.open .navbar a:not(:first-child) {
-        display: block;
-        transition: all 0.5s;
-    }
+
 
 
 /*-- Mobile Main Body --*/
