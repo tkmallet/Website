@@ -21,8 +21,6 @@ font-family: Quicksand, sans-serif;
     transition: 0.5s;
 }
 .navbarLogo {
-    width: 30px;
-    height:30px;
     cursor: pointer;
 }
 
@@ -52,15 +50,15 @@ font-family: Quicksand, sans-serif;
 
 /*-- mobile specific nav bar attributes --*/
 @media screen and (max-width: 600px) {
-    * {
-        margin: 5px;
-    }
     .navbar {
+        padding: 5px;
         height: 50px;
         z-index: 1;
         top: 0;
     }
     .navbarLogo {
+        width: 30px;
+        height:30px;
         top:0;
         left:0;
     }
@@ -76,9 +74,7 @@ font-family: Quicksand, sans-serif;
         transform-origin: top;
         transition: 0.5s;
     }
-    .navbar a {   
-        display: flex;
-    }
+
     /*-- JUST THE MENU BUTTON --*/
     .navbar .menuBars {
         float: right;
@@ -139,7 +135,32 @@ font-family: Quicksand, sans-serif;
     }    
 }
 
+/*-- desktop specific nav bar attributes --*/
+@media screen and (min-width: 601px) {
+    .navbar {
+        height: 50px;
+        margin: 5px;
+        transition: fadeIn 0.5s;
+    }
 
+    .navbarLogo {
+        margin: 5px;
+        height: 30px;
+        width: 30px;
+    }
+
+    #navbarA {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    #navbarA a {
+
+    }
+}
 
 
 
