@@ -144,24 +144,21 @@ font-family: Quicksand, sans-serif;
     }
 
     .navbarLogo {
-        margin: 5px;
+        margin: 1vh 10vh 1vh 1vh;
         height: 30px;
         width: 30px;
     }
 
     #navbarA {
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        text-align: center;
-        padding: 10px 20px;
+        margin: 1vh 0;
     }
 
     #navbarA a {
-
+        margin: 0 1vh;
     }
 }
-
+/*TO DO, finish desktop nav alignment*/
 
 
 /*-- animation timings --*/
